@@ -33,7 +33,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="125dp"
-                android:layout_marginTop="-10dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginBottom="0dp"
                 app:srcCompat="@drawable/password_manager_logo" />
             <TextView
@@ -46,10 +46,11 @@
                 android:textStyle="bold"
                 android:fontFamily="sans-serif"
                 android:gravity="center"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Register"
+                android:text="Log In"
                 android:layout_gravity="left"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
@@ -58,47 +59,7 @@
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-black"/>
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/myTextInputLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                app:hintTextColor="@color/white"
-                >
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_firstname_reg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="First Name"
-                    android:textColorHighlight="@color/white"
-                    android:singleLine="true"
-                    app:hintTextColor="@color/white"
-                    android:textColor="@color/white"
-                    android:elevation="15dp"
-                    android:outlineAmbientShadowColor="@color/blue"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/myTextInputLayout1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                app:hintTextColor="@color/white"
-                >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_lastname_reg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="last Name"
-                    android:textColorHighlight="@color/white"
-                    android:singleLine="true"
-                    app:hintTextColor="@color/white"
-                    android:textColor="@color/white"
-                    android:elevation="15dp"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/myTextInputLayout2"
@@ -109,7 +70,7 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_email_reg"
+                    android:id="@+id/et_email_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
@@ -130,7 +91,7 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_pas_reg"
+                    android:id="@+id/et_pas_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Password"
@@ -148,24 +109,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 app:hintTextColor="@color/white"
-                >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_rpas_reg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="RE-Enter Password"
-                    android:inputType="numberPassword"
-                    android:textColorHighlight="@color/white"
-                    android:singleLine="true"
-                    app:hintTextColor="@color/white"
-                    android:textColor="@color/white"
-                    android:elevation="15dp"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
+                />
 
             <Button
-                android:id="@+id/btn_SignUp_reg"
+                android:id="@+id/btn_login_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
@@ -173,7 +120,7 @@
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/blue"
 
-                android:text="SignUp" />
+                android:text="Log In" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -188,19 +135,18 @@
                     android:textColor="@color/white"
                     android:alpha="0.7"
                     />
-
                 <TextView
-                    android:id="@+id/tv_LogIn_reg"
+                    android:id="@+id/tv_register_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:backgroundTint="@color/black"
-                    android:paddingStart="0dp"
-                    android:text="Sign In"
                     android:textColor="@color/white"
+                    android:paddingStart="0dp"
+                    android:layout_marginLeft="5dp"
                     android:textSize="12dp"
                     android:textStyle="italic"
-                    tools:ignore="TextSizeCheck" />
+                    android:backgroundTint="@color/black"
+                    android:text="Register"
+                    />
             </LinearLayout>
         </LinearLayout>
 
